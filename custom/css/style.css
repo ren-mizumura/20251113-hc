@@ -10,7 +10,7 @@ body {
     line-height: 1;
     counter-reset: num 0;
     position: relative;
-    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(58, 41, 8));
+    background: linear-gradient(90deg, rgb(0, 0, 0) 70%,rgb(58, 41, 8));
 }
 
 
@@ -81,12 +81,23 @@ h2 span.ja {
 }
 
 section img {
-    width: 400px;
+    width: 50%;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; 
+    display: block;
+}
+
+section .tate {
+    width: 50%;
+    aspect-ratio: 2/3;
 }
 
 .text {
     width: 48%;
     margin-left: auto;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .item-copy {
@@ -97,7 +108,7 @@ section img {
 }
 
 .item-copy span {
-    background: #3aaeb2;
+    background: radial-gradient(rgb(58, 41, 8)40%,rgb(0, 0, 0));
     padding: 4px;
 }
 
@@ -107,7 +118,7 @@ section img {
 }
 
 footer {
-    background: #3aaeb2;
+    background: black;
     color: white;
     padding: 80px 0;
     text-align: center;
